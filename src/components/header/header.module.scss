@@ -1,0 +1,65 @@
+.header {
+  padding: 1rem 1rem 5rem 1rem;
+  background-color: #000000;
+  background-image: url('../../static/laptop.jpg');
+  background-repeat: no-repeat;
+  background-size: 45vw;
+  background-position: 90% center;
+  border-bottom-right-radius: 200px;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (min-width: 800px) {
+    background-size: 30vw;
+  }
+}
+
+.header-logo {
+  margin: 0 0 1.45rem 0;
+  padding: 0;
+  color: inherit;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.title {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.title:hover {
+  color: #ffffff;
+}
+
+.gradient-container {
+  background-image: linear-gradient(90deg, #3DFEDE, #0E83C5);
+  padding: calc(200px + 1rem) 2rem 0;
+  margin-top: -200px;
+  overflow: hidden;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav-item {
+  color: #ffffff;
+  font-size: .9rem;
+  font-weight: bold;
+  margin-right: 1.3rem;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: #3DFEDE;
+}
+
+.active-nav-item {
+  color: #0E83C5;
+}
