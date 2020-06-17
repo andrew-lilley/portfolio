@@ -32,7 +32,8 @@ module.exports = {
               maxWidth: 750,
               linkImagesToOriginal: false
             }
-          }
+          },
+          `gatsby-remark-external-links`
         ]
       }
     },
@@ -45,8 +46,25 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `standalone`,
+        lang: `en`,
         icon: `src/static/ft.png`
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-html-attributes`,
+      options: {
+        lang: `en`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+        sitemap: null,
+        host: null
+      }
+    },
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-catch-links`
   ]
 };

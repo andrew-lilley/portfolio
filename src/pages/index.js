@@ -10,7 +10,7 @@ const IndexPage = () => {
       <p>This is a website that I am using to collate the details of all the training courses that I have undertaken whilst on furlough. You can read more by visiting <Link to="/about/">About Me</Link>.</p>
       <p>If you are interested in what I have been upto, you can find out by visiting <Link to="/portfolio/">My Portfolio</Link>.</p>
       <p>I started to do some light training using <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a> but then I moved over to paid for courses on <a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy</a> after being sucked in by a pricing promotion.</p>
-      <p>Some technologies and services that I have been exposed to include:</p>
+      <p>Some technologies and services that I have been exposed to so far include:</p>
       <ul>
         <li><a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">Gatsby</a></li>
         <li><a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">Netlify</a></li>
