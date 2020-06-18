@@ -68,6 +68,13 @@ module.exports = {
       }
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-catch-links`
+    `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GA_TRACKING_ID,
+        head: true
+      }
+    }
   ]
 };
