@@ -32,7 +32,7 @@ This was a pretty straight forward app. It could be written in traditional javas
 ##Useful Links
 
 * **Indecision App:** https://react-portfolio-indecision.herokuapp.com/
-*As this is hosted on a free plan at [Heroku](https://www.heroku.com/), the app goes into hibernation when it is not in use. As such it might take some time to initial load.*
+*As this is hosted on a free plan at [Heroku](https://www.heroku.com/), the app goes into hibernation when it is not in use. As such it might take some time to initially load.*
 
 * **Github:** https://github.com/andrew-lilley/indecision-app
 

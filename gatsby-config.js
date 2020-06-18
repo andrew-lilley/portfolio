@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+const path = require(`path`);
+
 module.exports = {
   siteMetadata: {
       title: `Furlough Times`,
@@ -17,7 +19,7 @@ module.exports = {
         resolve: `gatsby-source-filesystem`,
         options: {
           name: `src`,
-          path: `${__dirname}/src/`
+          path: path.join(__dirname, `src`)
         }
     },
     `gatsby-plugin-sharp`,
@@ -37,6 +39,7 @@ module.exports = {
         ]
       }
     },
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

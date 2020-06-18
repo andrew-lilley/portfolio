@@ -13,11 +13,11 @@ It aims to build upon what was learned whilst building the [Indecision App](/por
 It covers topics such as:
 
 * Higher order components
-* React-Router
+* React-Router (anonymous and logged in)
 * Redux
 * Testing with [Jest](https://jestjs.io/en/) and [Enzyme](https://enzymejs.github.io/enzyme/)
 * A deployment to [Heroku](https://www.heroku.com/)
-* [firebase](https://firebase.google.com/) data storage and user authentication
+* [Firebase](https://firebase.google.com/) data storage and user authentication
 * SCSS
 
 ## Teaching
@@ -43,7 +43,7 @@ It would be nice to do the 3rd edition for this course when it is released. Hook
 ##Useful Links
 
 * **Expensify App:** https://react-portfolio-expensify.herokuapp.com/
-*As this is hosted on a free plan at [Heroku](https://www.heroku.com/), the app goes into hibernation when it is not in use. As such it might take some time to initial load.*
+*As this is hosted on a free plan at [Heroku](https://www.heroku.com/), the app goes into hibernation when it is not in use. As such it might take some time to initially load.*
 
 * **Github:** https://github.com/andrew-lilley/expensify-app
 
