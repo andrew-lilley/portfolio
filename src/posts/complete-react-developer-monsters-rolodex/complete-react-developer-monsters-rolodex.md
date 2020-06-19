@@ -23,7 +23,7 @@ At the beginning of the course and for most of the theory, Andrei Neagoie is the
 
 ## My thoughts
 
-This is a new course and I started it after completing the [Expensify App](/portfolio/complete-react-developer-expensify/). I spent a lot of time looking at [Webpack](https://webpack.js.org/) during that course so having [Create React App](https://reactjs.org/docs/create-a-new-react-app.html), that does all of the work for you, is amazing. That is mostly what I took out of this app development. Maybe I should have spent some time in the React documentation before doing these courses? Maybe I need to go back to the other apps? However, it does mean that my understanding is a little more broad which could be a good thing. 
+This is a new course and I started it after completing the [Expensify App](/portfolio/complete-react-developer-expensify/). I spent a lot of time looking at [Webpack](https://webpack.js.org/) during that course so having [Create React App](https://reactjs.org/docs/create-a-new-react-app.html), that does all of the work for you, is amazing. That is mostly what I took out of this app development. Maybe I need to go back to the other apps and update them? However, it does mean that my understanding is a little more broad which could be a good thing. It feels more like I have been on a journey of discovery through the training courses.
 
 The app itself is just an API call, a display of the retrieved data and a search filter. It's very simple, so much so that it can be hosted on Github.
 
