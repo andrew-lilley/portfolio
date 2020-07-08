@@ -43,8 +43,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Furlough Times`,
-        short_name: `Furlough Times`,
+        name: `Personal Development`,
+        short_name: `Personal Development`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
