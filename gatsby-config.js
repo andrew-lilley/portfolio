@@ -8,7 +8,7 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-      title: `Furlough Times`,
+      title: `Personal Development`,
       author: `Andrew Lilley`,
       description: `I am a Full Stack Developer who is interesting in broadening my development knowledge. On this website we explore the training courses that I have undertaken.`
   },
@@ -50,7 +50,7 @@ module.exports = {
         theme_color: `#ffffff`,
         display: `standalone`,
         lang: `en`,
-        icon: `src/static/ft.png`
+        icon: `src/static/pd.png`
       },
     },
     {

@@ -1,21 +1,19 @@
 ---
 title: "The Complete React Developer Course - CRXN Clothing"
-date: "2020-06-17"
+date: "2020-07-08"
 ---
 
 ## What is this?
 
 The CRXN Clothing app is the principle app of the Andrei Neagoie and Yihua Zhang Udemy course, [Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/).
 
-In the preview video there is a really big sell on this training course. By the end, you will have a fully functional complete ecommerce website that would have otherwise had taken many months to build. 
-
-*I am still working on this course so let's see how close we get to that in the end*.
+In the preview video there is a really big sell on this training course. By the end, you will have a fully functional complete ecommerce website that would have otherwise had taken many months to build.
 
 ## Topics covered
 
 There are many topics covered in this course. The course is mainly led by Yihua Zhang and he has a slightly different approach to the file directory structure and file naming conventions than what I was previously seeing on the last course but that was fine. 
 
-So far, the course has covered the following:
+The course covers the following:
 
 * React Router and Routing
 * Component building such as how to break up a design into components
@@ -24,6 +22,14 @@ So far, the course has covered the following:
 * A deployment to [Heroku](https://www.heroku.com/)
 * A payment integration with [Stripe](https://stripe.com/)
 * CSS in JS using [styled components](https://styled-components.com/)
+* HOC Patterns
+* Asynchronous Redux using [redux-thunk](https://github.com/reduxjs/redux-thunk) and [redux-saga](https://redux-saga.js.org/)
+* [React hooks](https://reactjs.org/docs/hooks-intro.html)
+* [Context API](https://reactjs.org/docs/context.html)
+* [GraphQL](https://www.graphql.com/) / [Apollo](https://www.apollographql.com/)
+* Performance improvement such as [code splitting](https://reactjs.org/docs/code-splitting.html) with lazy and suspense
+* Progressive Web App
+* Testing with [Jest](https://jestjs.io/) and [Enzyme](https://enzymejs.github.io/enzyme/)
 
 ## Teaching
 
@@ -33,7 +39,9 @@ The teaching style for this course led by Yihua Zhang was akin to pair programmi
 
 As this was more like pair programming, I have felt more like I was at work than doing a training course. As such, I started to notice things such as the Stripe integration being out of date, a lot of ecommerce functionality is actually missing (clothes and trainers without size and colour options). The UX probably requires some improvements too.
 
-I think that you have to accept the website for what it is, it is a demonstration website to illustrate that you have understood and employed the basic, and some advanced, concepts of React to create a functional website.
+I think that you have to accept the website for what it is, it is a demonstration website to illustrate that you have understood and employed the basic, and many advanced, concepts of React to create a functional website.
+
+I was quite pleased that there were several refactoring session along the way. For example, redux-thunk to redux-saga and implement hooks after completing the tasks using classes first. This allowed me to experience how these features could be introduced into an existing application.
 
 The website actually feels fast and at a quick glance it looks quite impressive.
 

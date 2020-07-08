@@ -50,6 +50,18 @@ const IndexPage = ({ data }) => {
     enzyme: {
       name: 'Enzyme',
       url: 'https://enzymejs.github.io/enzyme/'
+    },
+    firebase: {
+      name: 'Firebase',
+      url: 'https://firebase.google.com/'
+    },
+    stripe: {
+      name: 'Stripe',
+      url: 'https://stripe.com/'
+    },
+    apollo: {
+      name: 'Apollo',
+      url: 'https://www.apollographql.com/'
     }
   };
 

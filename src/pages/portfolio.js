@@ -26,8 +26,8 @@ const PortfolioList = () => {
   `);
 
   return (
-    <Layout title="My Portfolio" description="My portfolio illustrates the training courses that I have undertaken.">
-      <h1>My Portfolio</h1>
+    <Layout title="Training Portfolio" description="My portfolio illustrates the training courses that I have undertaken.">
+      <h1>Training Portfolio</h1>
       <p>As I undertake my training journey whilst on furlough, see <Link to="/about/">About Me</Link> for more details, I am going to write about the courses and the apps that I create.</p>
       <p>At the moment, I am hosting any apps on free platforms. As such, it can take a little time for the app to come out of hibernation. The first load is going to probably be a little slow.</p>
       {data.allMarkdownRemark.edges.length > 0 ?
