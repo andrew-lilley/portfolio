@@ -8,7 +8,7 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-      title: `Personal Development`,
+      title: `Development Dojo`,
       author: `Andrew Lilley`,
       description: `I am a Full Stack Developer who is interesting in broadening my development knowledge. On this website we explore the training courses that I have undertaken.`
   },
@@ -43,14 +43,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Personal Development`,
-        short_name: `Personal Development`,
+        name: `Development Dojo`,
+        short_name: `Development Dojo`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `standalone`,
         lang: `en`,
-        icon: `src/static/pd.png`
+        icon: `src/static/dd.png`
       },
     },
     {

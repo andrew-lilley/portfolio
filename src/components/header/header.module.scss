@@ -22,6 +22,12 @@
   text-rendering: optimizeLegibility;
   font-size: 2.5rem;
   line-height: 1.1;
+  width: 60vw;
+
+  @media screen and (min-width: 800px) {
+    background-size: 30vw;
+    width: 80vw;
+  }
 }
 
 .title {
