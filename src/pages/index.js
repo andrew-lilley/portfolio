@@ -67,7 +67,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout title="Home" description="I am a Full Stack Developer who is interesting in broadening my development knowledge. On this website we explore the training courses that I have undertaken.">
-      <h1>Welcome to my website</h1>
+      <h1>Hi, I'm Andrew Lilley, welcome to my website</h1>
       <p>Initially, this is a website that I am using to collate the details of all the training courses that I have undertaken whilst on furlough. You can read more by visiting <Link to="/about/">About Me</Link>.</p>
       <p>I will not be regurgitating the content of the courses. This is not a training programme. It is merely a record of what I have been doing. I will include links to the codebase and the apps that I have written and deployed. I will also document any thoughts that I had whilst doing the courses.</p>
       <p>If you are interested in what I have been upto, you can find out by visiting my <Link to="/portfolio/">training portfolio</Link>.</p>
