@@ -70,7 +70,7 @@ const IndexPage = ({ data }) => {
       <h1>Hi, I'm Andrew Lilley, welcome to my website</h1>
       <p>Initially, this is a website that I am using to collate the details of all the training courses that I have undertaken whilst on furlough. You can read more by visiting <Link to="/about/">About Me</Link>.</p>
       <p>I will not be regurgitating the content of the courses. This is not a training programme. It is merely a record of what I have been doing. I will include links to the codebase and the apps that I have written and deployed. I will also document any thoughts that I had whilst doing the courses.</p>
-      <p>If you are interested in what I have been upto, you can find out by visiting my <Link to="/portfolio/">training portfolio</Link>.</p>
+      <p>If you are interested in what I have been upto, you can find out by visiting the <Link to="/training-courses/">training courses</Link> section.</p>
       <p>I started to do some light training using <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a> but then I moved over to paid for courses on <a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy</a> after being sucked in by a pricing promotion.</p>
       <p>Some technologies and services that I have been exposed to so far include:</p>
 
