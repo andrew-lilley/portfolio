@@ -1,6 +1,7 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { INLINES } from '@contentful/rich-text-types';
 import Layout from '../components/layout/layout';
 
 export const query = graphql`
@@ -22,6 +23,14 @@ const TrainingCourse = (props) => {
         const alt = node.data.target.fields.title['en-US'];
         const url = node.data.target.fields.file['en-US'].url;
         return <img alt={alt} src={url} />
+      },
+      [INLINES.HYPERLINK]: (node) => {
+        if (node.data.uri.startsWith('http')) {
+          return <a href={node.data.uri} target="_blank" rel="noreferrer">{node.content[0].value}</a>;
+        }
+        else {
+          return <Link to={node.data.uri}>{node.content[0].value}</Link>;
+        }
       }
     }
   }
