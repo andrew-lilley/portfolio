@@ -42,7 +42,14 @@ module.exports = {
               linkImagesToOriginal: false
             }
           },
-          `gatsby-remark-external-links`
+          `gatsby-remark-external-links`,
+          {
+            resolve: `gatsby-remark-images-contentful`,
+            options: {
+              maxWidth: 750,
+              withWebp: true
+            }
+          }
         ]
       }
     },

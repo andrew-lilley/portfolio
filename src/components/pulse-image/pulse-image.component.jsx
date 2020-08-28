@@ -2,18 +2,16 @@ import React from 'react';
 import Img from "gatsby-image";
 import { PulseImageSpan } from './pulse-image.styles';
 
-const PulseImage = ({ edge, collection }) => {
-
-  let collection_details = collection[edge.node.name];
+const PulseImage = ({ id, title, url, image }) => {
 
   return (
-      <PulseImageSpan key={edge.node.id}>
-        <a href={collection_details.url} target="_blank" rel="noopener noreferrer">
+      <PulseImageSpan key={id}>
+        <a href={url} target="_blank" rel="noopener noreferrer">
           <Img
-            fluid={edge.node.childImageSharp.fluid}
+            fluid={image.fluid}
             style={{maxHeight: "100%"}}
             imgStyle={{objectFit: "contain"}}
-            alt={collection_details.name}
+            alt={title}
           />
         </a>
       </PulseImageSpan>

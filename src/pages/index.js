@@ -8,65 +8,6 @@ import indexStyles from './index.module.scss';
 
 const IndexPage = (props) => {
 
-  const company_logos = {
-    gatsby: {
-      name: 'Gatsby',
-      url: 'https://www.gatsbyjs.org/'
-    },
-    netlify: {
-      name: 'Netlify',
-      url: 'https://www.netlify.com/'
-    },
-    graphql: {
-      name: 'GraphQL',
-      url: 'https://graphql.org/'
-    },
-    react: {
-      name: 'React',
-      url: 'https://reactjs.org/'
-    },
-    github: {
-      name: 'Github',
-      url: 'https://github.com/'
-    },
-    webpack: {
-      name: 'Webpack',
-      url: 'https://webpack.js.org/'
-    },
-    heroku: {
-      name: 'Heroku',
-      url: 'https://www.heroku.com/'
-    },
-    node: {
-      name: 'NodeJS',
-      url: 'https://nodejs.org/'
-    },
-    redux: {
-      name: 'Redux',
-      url: 'https://redux.js.org/'
-    },
-    jest: {
-      name: 'Jest',
-      url: 'https://jestjs.io/'
-    },
-    enzyme: {
-      name: 'Enzyme',
-      url: 'https://enzymejs.github.io/enzyme/'
-    },
-    firebase: {
-      name: 'Firebase',
-      url: 'https://firebase.google.com/'
-    },
-    stripe: {
-      name: 'Stripe',
-      url: 'https://stripe.com/'
-    },
-    apollo: {
-      name: 'Apollo',
-      url: 'https://www.apollographql.com/'
-    }
-  };
-
   const options = {
     renderNode: {
       [BLOCKS.EMBEDDED_ASSET]: (node) => {
@@ -107,11 +48,11 @@ const IndexPage = (props) => {
       <h1>{props.data.contentfulPage.title}</h1>
       {documentToReactComponents(props.data.contentfulPage.body.json, options)}
 
-      {props.data.allFile.edges.length > 0 &&
+      {props.data.allContentfulTech.edges.length > 0 &&
         <ul className={indexStyles.techGrid}>
-          {props.data.allFile.edges.map((edge) => {
+        {props.data.allContentfulTech.edges.map((edge) => {
             return (
-              <li><PulseImage edge={edge} collection={company_logos} /></li>
+              <li><PulseImage id={edge.node.id} title={edge.node.title} url={edge.node.url} image={edge.node.logo} /></li>
             )
           })}
         </ul>
@@ -123,16 +64,24 @@ const IndexPage = (props) => {
 
 export const query = graphql`
   query {
-    allFile(filter: {relativePath: {regex: "/company-logos/"}}) {
+    allContentfulTech {
       edges {
         node {
-          id
-          childImageSharp {
+          id,
+          title,
+          url,
+          logo {
             fluid(maxHeight: 200, maxWidth: 200) {
-              ...GatsbyImageSharpFluid
+              base64,
+              tracedSVG,
+              aspectRatio,
+              src,
+              srcSet,
+              srcWebp,
+              srcSetWebp,
+              sizes
             }
           }
-          name
         }
       }
     }
