@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link, graphql } from 'gatsby';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { renderRichText } from 'gatsby-source-contentful/rich-text';
 import { INLINES, BLOCKS } from '@contentful/rich-text-types';
 import Layout from '../components/layout/layout';
-import trainingCoursesStyles from './training-courses.module.scss';
+import * as trainingCoursesStyles from './training-courses.module.scss';
 
 const TrainingCoursesList = (props) => {
 
@@ -45,7 +45,7 @@ const TrainingCoursesList = (props) => {
   return (
     <Layout title={props.data.contentfulPage.seoTitle} description={props.data.contentfulPage.seoDescription.childMarkdownRemark.rawMarkdownBody}>
       <h1>{props.data.contentfulPage.title}</h1>
-      {documentToReactComponents(props.data.contentfulPage.body.json, options)}
+      {renderRichText(props.data.contentfulPage.body, options)}
       {props.data.allContentfulTrainingCourse.edges.length > 0 ?
         <ol className={trainingCoursesStyles.posts}>
           {props.data.allContentfulTrainingCourse.edges.map((edge) => {
@@ -67,27 +67,29 @@ const TrainingCoursesList = (props) => {
 export const query = graphql`
   query {
     contentfulPage(slug: {eq: "training-courses-introduction"}) {
-      title,
-      seoTitle,
+      id
+      title
+      seoTitle
     	seoDescription {
         childMarkdownRemark {
           rawMarkdownBody
         }
-      },
+      }
       body {
-        json
+        raw
       }
     }
     allContentfulTrainingCourse (
       sort: {
-        fields: publishedDate,
+        fields: publishedDate
         order: DESC
       }
     ) {
       edges {
         node {
-          title,
-          slug,
+          id
+          title
+          slug
           publishedDate(formatString: "Do MMMM YYYY")
         }
       }

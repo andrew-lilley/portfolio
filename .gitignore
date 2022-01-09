@@ -68,9 +68,6 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-# NPM
-package-lock.json
-
 # My project notes.
 notes.TXT
 

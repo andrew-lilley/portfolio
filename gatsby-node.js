@@ -2,7 +2,7 @@
 const path = require("path");
 
 // Gatsby Internal API, see https://www.gatsbyjs.org/docs/node-apis/#createPages
-module.exports.createPages = async ({ graphql, actions}) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   // Get the path to the training course template.

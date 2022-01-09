@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-
-import headerStyles from './header.module.scss';
+import * as  headerStyles from './header.module.scss';
 
 const Header = () => {
   // Get the site title.
