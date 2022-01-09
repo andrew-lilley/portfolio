@@ -3,7 +3,7 @@ import Header from '../header/header';
 import Footer from '../footer/footer';
 import Head from '../meta/head';
 import '../../styles/index.scss';
-import layoutStyles from './layout.module.scss';
+import * as layoutStyles from './layout.module.scss';
 
 const Layout = (props) => {
   return (
