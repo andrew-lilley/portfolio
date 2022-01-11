@@ -57,7 +57,14 @@ const IndexPage = (props) => {
         <ul className={indexStyles.techGrid}>
         {props.data.allContentfulTech.edges.map((edge) => {
             return (
-              <li key={edge.node.id}><PulseImage id={edge.node.id} title={edge.node.title} url={edge.node.url} image={edge.node.logo} /></li>
+              <li key={edge.node.id}>
+                <PulseImage
+                  id={edge.node.id}
+                  url={edge.node.url}
+                  image={edge.node.logo}
+                  title={edge.node.title}
+                />
+              </li>
             )
           })}
         </ul>
@@ -72,32 +79,33 @@ export const query = graphql`
     allContentfulTech {
       edges {
         node {
-          id,
-          title,
-          url,
+          id
+          title
+          url
           logo {
-            fluid(maxHeight: 200, maxWidth: 200) {
-              base64,
-              tracedSVG,
-              aspectRatio,
-              src,
-              srcSet,
-              srcWebp,
-              srcSetWebp,
-              sizes
-            }
+            gatsbyImageData(
+              formats: [AUTO, WEBP]
+              jpegProgressive: true
+              placeholder: BLURRED
+              sizes: "maxHeight: 200, maxWidth: 200"
+              aspectRatio: 1
+              resizingBehavior: SCALE
+              width: 200
+              height: 200
+              layout: CONSTRAINED
+            )
           }
         }
       }
     }
     contentfulPage(slug: {eq: "home-page"}) {
-      title,
-      seoTitle,
+      title
+      seoTitle
     	seoDescription {
         childMarkdownRemark {
           rawMarkdownBody
         }
-      },
+      }
       body {
         raw
       }

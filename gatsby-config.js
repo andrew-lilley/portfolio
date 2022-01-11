@@ -4,8 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-const path = require(`path`);
-
 module.exports = {
   siteMetadata: {
       title: `Development Dojo`,
@@ -26,22 +24,30 @@ module.exports = {
         resolve: `gatsby-source-filesystem`,
         options: {
           name: `src`,
-          path: path.join(__dirname, `src`)
+          path: `${__dirname}/src/`
         }
     },
-    `gatsby-plugin-sharp`,
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `blurred`,
+          quality: 50,
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        },
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          `gatsby-remark-relative-images`,
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 750,
-              linkImagesToOriginal: false
-            }
-          },
           `gatsby-remark-external-links`,
           {
             resolve: `gatsby-remark-images-contentful`,

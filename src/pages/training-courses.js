@@ -51,7 +51,7 @@ const TrainingCoursesList = (props) => {
           {props.data.allContentfulTrainingCourse.edges.map((edge) => {
           return (
             <li key={edge.node.id} className={trainingCoursesStyles.post}>
-              <Link to={`/training-course/${edge.node.slug}/`}>
+              <Link to={`/training-courses/${edge.node.slug}/`}>
                 <h3>{edge.node.title}</h3>
                 <p>{edge.node.publishedDate}</p>
               </Link>

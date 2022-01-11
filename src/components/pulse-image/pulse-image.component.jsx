@@ -1,16 +1,14 @@
 import React from 'react';
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { PulseImageSpan } from './pulse-image.styles';
 
-const PulseImage = ({ id, title, url, image }) => {
-
+const PulseImage = ({ id, url, image, title }) => {
+  const gatsbyImage = getImage(image);
   return (
       <PulseImageSpan key={id}>
         <a href={url} target="_blank" rel="noopener noreferrer">
-          <Img
-            fluid={image.fluid}
-            style={{maxHeight: "100%"}}
-            imgStyle={{objectFit: "contain"}}
+          <GatsbyImage
+            image={gatsbyImage}
             alt={title}
           />
         </a>
